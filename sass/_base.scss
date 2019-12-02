@@ -4,3 +4,13 @@ $lightGreen: #c5d5cb;
 $mediumGreen:#9fa8a3;
 $khaki:#e3e0cf;
 $white: #fff;
+
+$aboutPageFont:  'Solway', serif;
+
+#main-nav{
+    background-color: $lightGreen; 
+  }
+
+  h2{
+    font-family: $aboutPageFont;
+  }

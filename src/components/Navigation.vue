@@ -1,6 +1,6 @@
 <template>
   <div id="navigation">
-    <div id="wrapper">
+    <div id="main-nav">
       <h2>Salon</h2>
           <ul>
             <li><router-link to="/">Home</router-link></li>
@@ -25,8 +25,8 @@ export default{
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss"scoped>
-  #wrapper{
-    background-color:lightGreen;
-  }
+@import './sass/_base.scss';
+
+
 
 </style>
