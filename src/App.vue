@@ -1,25 +1,18 @@
 <template>
   <div id="app">
-  <About/>
-  <Navigation/>
-  <BlogPage/>
-  <VideoPage/>
+    <navigation/>
+    <hr>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import About from './components/About.vue'
-import Navigation from './components/Navigation.vue'
-import BlogPage from './components/BlogPage.vue'
-import VideoPage from './components/VideoPage.vue'
+import navigation from './components/Navigation.vue';
 
 export default{
   name: 'App',
   components: {
-    'About': About,
-    'Navigation': Navigation,
-    'BlogPage': BlogPage,
-    'VideoPage': VideoPage
+    navigation
   }
 }
 </script>
