@@ -1,11 +1,13 @@
 <template>
-  <div class="navigation">
-   <h2>Salon</h2>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/video">Video Page</router-link></li>
-        <li><router-link to="/blog">Blog Page</router-link></li>
-      </ul>
+  <div id="navigation">
+    <div id="wrapper">
+      <h2>Salon</h2>
+          <ul>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/video">Video Page</router-link></li>
+            <li><router-link to="/blog">Blog Page</router-link></li>
+          </ul>
+    </div>
   </div>
 </template>
 
@@ -22,6 +24,9 @@ export default{
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss"scoped>
+  #wrapper{
+    background-color:lightGreen;
+  }
 
 </style>
