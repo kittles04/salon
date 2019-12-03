@@ -1,5 +1,38 @@
-#main-nav {
+#container h2 {
+  font-family: "Solway", serif;
+  font-size: 36px;
+  color: #9fa8a3; }
+
+#container__ul li {
+  font-family: "Solway", serif;
+  list-style-type: none;
+  font-size: 24px; }
+
+#container {
   background-color: #c5d5cb; }
 
-h2 {
-  font-family: "Solway", serif; }
+div #container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[1];
+  grid-template-columns: repeat(1, auto);
+  -ms-grid-rows: (fr)[2];
+  grid-template-rows: repeat(2, fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+#container__ul li a {
+  text-decoration: none;
+  color: #fff; }
+
+#container__nav li:hover,
+#container__nav li.router-link-active,
+#container__nav li.router-link-exact-active {
+  background-color: #e3e0cf;
+  cursor: pointer;
+  width: auto; }

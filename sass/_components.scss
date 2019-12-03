@@ -1,1 +1,28 @@
 //resusables: buttons, navbars, cards
+
+//navbar
+
+
+
+div #container{
+    display:grid;
+    grid-template-columns:repeat(1,auto);
+    grid-template-rows:repeat(2,fr);
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    justify-content: space-around;
+}
+
+#container__ul li a{
+    text-decoration: none;
+    color: $white;
+}
+
+#container__nav li:hover,
+#container__nav li.router-link-active,
+#container__nav li.router-link-exact-active {
+   background-color: $khaki;
+   cursor: pointer;
+   width: auto;
+ }

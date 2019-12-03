@@ -7,10 +7,24 @@ $white: #fff;
 
 $aboutPageFont:  'Solway', serif;
 
-#main-nav{
+$heading: 36px;
+
+$listItems: 24px;
+
+
+#container h2{
+    font-family: $aboutPageFont;
+    font-size: $heading;
+    color: $mediumGreen;
+}
+
+#container__ul li{
+    font-family: $aboutPageFont;
+    list-style-type: none;
+    font-size: $listItems;
+}
+
+#container{
     background-color: $lightGreen; 
   }
 
-  h2{
-    font-family: $aboutPageFont;
-  }
