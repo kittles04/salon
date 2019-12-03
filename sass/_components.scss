@@ -2,12 +2,14 @@
 
 //navbar
 
-
+div #container h2{
+    grid-column:3/4;
+}
 
 div #container{
     display:grid;
-    grid-template-columns:repeat(1,auto);
-    grid-template-rows:repeat(2,fr);
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:repeat(2,1fr);
     align-items: center;
     text-align: center;
     height: 100px;
@@ -19,9 +21,23 @@ div #container{
     color: $white;
 }
 
-#container__nav li:hover,
-#container__nav li.router-link-active,
-#container__nav li.router-link-exact-active {
+ul#container__ul 
+    li#container--one{
+  
+}
+
+li#container--two .routerlink{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+#container--three{
+
+}
+
+#container li:hover,
+#container li.router-link-active,
+#container li.router-link-exact-active {
    background-color: $khaki;
    cursor: pointer;
    width: auto;

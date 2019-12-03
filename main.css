@@ -11,13 +11,18 @@
 #container {
   background-color: #c5d5cb; }
 
+div #container h2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4; }
+
 div #container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[1];
-  grid-template-columns: repeat(1, auto);
-  -ms-grid-rows: (fr)[2];
-  grid-template-rows: repeat(2, fr);
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -30,9 +35,17 @@ div #container {
   text-decoration: none;
   color: #fff; }
 
-#container__nav li:hover,
-#container__nav li.router-link-active,
-#container__nav li.router-link-exact-active {
+li#container--two .routerlink {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3; }
+
+#container li:hover,
+#container li.router-link-active,
+#container li.router-link-exact-active {
   background-color: #e3e0cf;
   cursor: pointer;
   width: auto; }

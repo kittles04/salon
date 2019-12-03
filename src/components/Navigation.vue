@@ -2,9 +2,9 @@
   <div id="container">
       <h2>Salon</h2>
           <ul id="container__ul">
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/video">Video Page</router-link></li>
-            <li><router-link to="/blog">Blog Page</router-link></li>
+            <li id="container--one"><router-link to="/" class="routerlink">Home</router-link></li>
+            <li id="container--two"><router-link to="/video" class="routerlink">Video Page</router-link></li>
+            <li id="container--three"><router-link to="/blog" class="routerlink">Blog Page</router-link></li>
           </ul>
   </div>
 </template>
