@@ -3,13 +3,28 @@
   font-size: 36px;
   color: #9fa8a3; }
 
-#container__ul li {
+#container .routerlink1, .routerlink2, .routerlink3 {
   font-family: "Solway", serif;
   list-style-type: none;
   font-size: 24px; }
 
 #container {
   background-color: #c5d5cb; }
+
+div#container .routerlink1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-decoration: none;
+  color: #fff; }
+
+div#container .routerlink2 {
+  text-decoration: none;
+  color: #fff; }
+
+div#container .routerlink3 {
+  text-decoration: none;
+  color: #fff; }
 
 div #container h2 {
   -ms-grid-column: 3;
@@ -35,7 +50,7 @@ div #container {
   text-decoration: none;
   color: #fff; }
 
-li#container--two .routerlink {
+#container__ul li a .router-link-active {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -43,9 +58,16 @@ li#container--two .routerlink {
   -ms-grid-row-span: 1;
   grid-row: 2/3; }
 
-#container li:hover,
-#container li.router-link-active,
-#container li.router-link-exact-active {
+ul#container__ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3; }
+
+div#container router-link:hover,
+div#container router-link-active,
+div#container router-link-exact-active {
   background-color: #e3e0cf;
-  cursor: pointer;
-  width: auto; }
+  cursor: pointer; }

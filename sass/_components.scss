@@ -2,6 +2,24 @@
 
 //navbar
 
+div#container .routerlink1 {
+    grid-column:2/3;
+    text-decoration: none;
+    color: $white;
+}
+
+
+div#container .routerlink2{
+    text-decoration: none;
+    color: $white;
+}
+
+
+div#container .routerlink3{
+    text-decoration: none;
+    color: $white;
+}
+
 div #container h2{
     grid-column:3/4;
 }
@@ -16,29 +34,25 @@ div #container{
     justify-content: space-around;
 }
 
-#container__ul li a{
+#container__ul li a {
     text-decoration: none;
     color: $white;
 }
 
-ul#container__ul 
-    li#container--one{
-  
+#container__ul li a .router-link-active{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
-li#container--two .routerlink{
-    grid-column:2/3;
-    grid-row:2/3;
-}
+ul#container__ul {
+      grid-column: 2/3;
+      grid-row: 2/3;
+} 
 
-#container--three{
 
-}
-
-#container li:hover,
-#container li.router-link-active,
-#container li.router-link-exact-active {
+div#container router-link:hover,
+div#container router-link-active,
+div#container router-link-exact-active {
    background-color: $khaki;
    cursor: pointer;
-   width: auto;
  }

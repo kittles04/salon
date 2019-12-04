@@ -9,7 +9,7 @@ $aboutPageFont:  'Solway', serif;
 
 $heading: 36px;
 
-$listItems: 24px;
+$routerLinks: 24px;
 
 
 #container h2{
@@ -18,10 +18,10 @@ $listItems: 24px;
     color: $mediumGreen;
 }
 
-#container__ul li{
+#container .routerlink1, .routerlink2, .routerlink3{
     font-family: $aboutPageFont;
     list-style-type: none;
-    font-size: $listItems;
+    font-size: $routerLinks;
 }
 
 #container{
