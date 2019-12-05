@@ -1,18 +1,15 @@
 <template>
-  <div class="about">
+  <div class="blog">
    <p>{{greeting}}</p>
-   <banner></banner>
   </div>
 </template>
 
 <script>
-import banner from '../components/Banner.vue'
 export default{
-  name: 'about',
- 
+  name: 'BlogPage',
   data:function(){
     return{
-      greeting: 'About'
+      greeting: 'Blog Page'
     }
   }
 }

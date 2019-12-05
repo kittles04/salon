@@ -1,15 +1,12 @@
 <template>
   <div class="about">
    <p>{{greeting}}</p>
-   <banner></banner>
   </div>
 </template>
 
 <script>
-import banner from '../components/Banner.vue'
 export default{
   name: 'about',
- 
   data:function(){
     return{
       greeting: 'About'

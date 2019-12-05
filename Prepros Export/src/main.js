@@ -4,12 +4,9 @@ import './registerServiceWorker';
 import about from './components/About.vue';
 import BlogPage from './components/BlogPage.vue';
 import VideoPage from './components/VideoPage.vue';
-import banner from './components/Banner.vue';
 import VueRouter from 'vue-router';
-import VueLoadImage from 'vue-load-image';
 
 Vue.use(VueRouter);
-
 
 const routes = [
   { path: '/', component: about},

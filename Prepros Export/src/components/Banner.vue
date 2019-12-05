@@ -1,20 +1,19 @@
 <template>
   <div id="container">
-      <h2>Salon</h2>
-     
-           <router-link to="/" class="routerlink1">Home</router-link>
-           <router-link to="/video" class="routerlink2">Video Page</router-link>
-           <router-link to="/blog" class="routerlink3">Blog Page</router-link>
+    <div class="lead-banner">
+        <img src="img/banner-1.png"/>
+        <div class="banner-content">
+            <span class="title">Remote French Book Club</span>
+            <span class="sub-title">Check our Reading List</span>
+        </div>
+  </div>
+      
   </div>
 </template>
 
 <script>
-
-
 export default{
-    name: 'navigation',
-    components:{
-    },
+    name: 'banner',
   data:function(){
     return{
       
@@ -23,7 +22,6 @@ export default{
 }
 
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss"scoped>
 @import './sass/_base.scss';
