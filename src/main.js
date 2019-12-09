@@ -7,8 +7,14 @@ import VideoPage from './components/VideoPage.vue';
 import banner from './components/Banner.vue';
 import VueRouter from 'vue-router';
 import VueLoadImage from 'vue-load-image';
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+
+
 
 Vue.use(VueRouter);
+Vue.use(VueMaterial);
 
 
 const routes = [
@@ -23,6 +29,8 @@ const router = new VueRouter({
 });
 
 Vue.config.productionTip = false
+
+Vue.component('banner', banner);
 
 
 new Vue({

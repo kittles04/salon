@@ -12,7 +12,7 @@
 <script>
 
 export default{
-    name: 'banner',
+  name: 'banner',
   data:function(){
     return{
     }

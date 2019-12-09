@@ -2,7 +2,6 @@
   <div id="app">
     <navigation/>
     <hr>
-    <banner></banner>
     <router-view></router-view>
   </div>
 </template>
