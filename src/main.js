@@ -7,12 +7,13 @@ import VideoPage from './components/VideoPage.vue';
 import banner from './components/Banner.vue';
 import VueRouter from 'vue-router';
 import VueLoadImage from 'vue-load-image';
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
+import VueMaterial from 'vue-material';
+import 'vue-material/dist/vue-material.min.css';
+import 'vue-material/dist/theme/default.css';
+import VueResource from 'vue-resource';
 
 
-
+Vue.use(VueResource)
 Vue.use(VueRouter);
 Vue.use(VueMaterial);
 
