@@ -9,12 +9,20 @@
 <script>
 import navigation from './components/Navigation.vue';
 import banner from './components/Banner.vue';
+import Rooms from './components/Rooms.vue';
+import Video from './components/Video.vue';
+import AddRoom from './components/Rooms.vue';
+import Logs from './components/Video.vue';
 
 export default{
   name: 'App',
   components: {
     navigation,
-    banner
+    banner,
+    Rooms,
+    Video,
+    AddRoom,
+    Logs
   }
 }
 </script>
