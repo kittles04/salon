@@ -1,6 +1,6 @@
 <template>
     <div class="row roomForm">
-       <form class="form-inline" @submit.prevent="createNewRoom(room_name)">
+       <form class="form-inline" @submit.prevent="createNewRoom(room_name)" v-on:keydown.enter="$event.stopPropagation()">
            <div class="form-group mb-2">
                <input type="text" class="form-control" v-model="room_name" >
            </div>
@@ -22,7 +22,6 @@ export default{
    createNewRoom(name) {
        if(!name) {
          alert("please provide a room name");
-         return
        }
 
        this.room_name = '';

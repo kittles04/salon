@@ -24,6 +24,7 @@ import Rooms from '../components/Rooms.vue';
 import Video from '../components/Video.vue';
 import Logs from '../components/Logs.vue';
 import AddRoom from '../components/AddRoom.vue';
+import axios from 'axios'
 
 export default{
   name: 'VideoPage',
@@ -37,7 +38,8 @@ export default{
   components: {
     Rooms,
     Video,
-    Logs
+    Logs,
+    AddRoom
   },
   methods: {
     submitUsername(username) {

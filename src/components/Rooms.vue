@@ -10,6 +10,7 @@
 <script>
 import { EventBus } from '../Event'
 import AddRoom from '../components/AddRoom.vue'
+import axios from 'axios'
 
 export default {
  name: "Rooms", // Name of the component

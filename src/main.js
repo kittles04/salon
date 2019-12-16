@@ -11,8 +11,9 @@ import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.min.css';
 import 'vue-material/dist/theme/default.css';
 import VueResource from 'vue-resource';
+import axios from 'axios'
 
-
+Vue.prototype.$http = axios
 Vue.use(VueResource)
 Vue.use(VueRouter);
 Vue.use(VueMaterial);
