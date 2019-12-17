@@ -13,10 +13,21 @@ import 'vue-material/dist/theme/default.css';
 import VueResource from 'vue-resource';
 import axios from 'axios'
 
+
+
+
+
+console.log(process);
 Vue.prototype.$http = axios
 Vue.use(VueResource)
 Vue.use(VueRouter);
 Vue.use(VueMaterial);
+
+// if(process.env.filezilla == true){
+//   //pretend picture saved elsewhere in filezilla
+// }else{
+//   const picture = require('../img/dog')
+// }
 
 
 const routes = [

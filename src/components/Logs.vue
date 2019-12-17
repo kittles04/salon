@@ -8,6 +8,7 @@
 
 <script>
 import { EventBus } from '../Event'
+import axios from 'axios'
 
 
 export default{

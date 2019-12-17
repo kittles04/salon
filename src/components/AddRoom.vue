@@ -11,6 +11,7 @@
 
 <script>
 import { EventBus } from '../Event'
+
 export default{
    name: "AddRoom", // Component name
  data() {
@@ -22,6 +23,7 @@ export default{
    createNewRoom(name) {
        if(!name) {
          alert("please provide a room name");
+         return
        }
 
        this.room_name = '';

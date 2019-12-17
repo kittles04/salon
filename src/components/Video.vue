@@ -47,14 +47,36 @@ export default{
  },
  methods: {
    // Generate access token
+
    async getAccessToken() {
-         try {
-            const response = await axios.get(`http://localhost:8080/video/token?identity=${this.username}`)
-            .then(response => (this.data = response))
-            console.log(response);
-        } catch (error) {
-            console.log(error);
-        }
+        //  
+        var AccessToken = require('twilio').jwt.AccessToken;
+var VideoGrant = AccessToken.VideoGrant;
+
+// Substitute your Twilio AccountSid and ApiKey details
+var VUE_APP_TWILIO_ACCOUNT_SID = 'accountSid';
+var VUE_APP_TWILIO_API_KEY_SID = 'apiKeySid';
+var VUE_APP_TWILIO_API_KEY_SECRET = 'apiKeySecret';
+
+// Create an Access Token
+var accessToken = new AccessToken(
+  VUE_APP_TWILIO_ACCOUNT_SID,
+  VUE_APP_TWILIO_API_KEY_SID,
+  VUE_APP_TWILIO_API_KEY_SECRET
+);
+
+// Set the Identity of this token
+accessToken.identity = 'example-user';
+
+// Grant access to Video
+var grant = new VideoGrant();
+grant.room = 'cool room';
+accessToken.addGrant(grant);
+
+// Serialize the token as a JWT
+var jwt = accessToken.toJwt();
+console.log(jwt);
+return jwt;
    },
 
    // Trigger log events 
@@ -100,14 +122,15 @@ export default{
    // Create a new chat
    createChat(room_name) {
        this.loading = true;
-      const VueThis = this;
+      let VueThis = this;
 
       this.getAccessToken().then( (data) => {
+          console.log('hi kerri');
           VueThis.roomName = null;
-          const token = data.data.token;
+          const token = VueThis.data.token;
           let connectOptions = {
               name: room_name,
-              // logLevel: 'debug',
+            //   logLevel: 'debug',
               audio: true,
               video: { width: 400 }
           };
